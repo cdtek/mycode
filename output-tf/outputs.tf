@@ -14,3 +14,8 @@ output "container_hostname" {
   description = "hostname of container"
   value       = docker_container.nginx.hostname
 }
+
+output "ip_address" {
+  description = "IP Address of the Docker image"
+  value       = docker_container.nginx.ip_address
+}
